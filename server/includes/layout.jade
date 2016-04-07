@@ -1,0 +1,10 @@
+doctype
+html(ng-app='#{app}')
+	head
+		title Big Mic
+		link(rel="stylesheet", href="/css/bootstrap.css")
+		link(rel="stylesheet", href="/css/global.css")
+	body(class='#{style}' ng-controller=('#{ctrl}' === 'undefined' ? false : '#{ctrl}'))
+		base(href="/")
+		block main-content
+		include scripts

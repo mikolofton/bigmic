@@ -1,0 +1,24 @@
+<div ui-view="login">
+
+	<div class="container user-info">
+		<div class="well">
+			<div class="row">
+				<div class="col-xs-12">
+					Main View
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<a ng-controller="BeginQACtrl" ng-click="beginQA()" href class="btn btn-info btn-lg {{btnState}}">{{btn}}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Meeting Details -->
+	<div ng-include="'app/components/meetingDetails/meetingDetailsView.html'"></div>
+
+	<!-- Speaker Info -->
+	<!-- <div ng-include="'views/partials/speaker.html'"></div> -->
+
+</div>

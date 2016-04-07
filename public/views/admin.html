@@ -1,0 +1,29 @@
+<div ui-view="login">
+	<div class="container user-info">
+		<div class="well">
+			<div class="row">
+				<div class="col-xs-12">
+					Admin View
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Meeting Details -->
+	<div ng-include="'app/components/meetingDetails/meetingDetailsView.html'"></div>
+
+	<!-- Queue -->
+	<bm-queue role="admin"></bm-queue>
+
+	<div ui-view>
+		<div class="container actions">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-success" ng-click="beginQA();">
+						Begin QA
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

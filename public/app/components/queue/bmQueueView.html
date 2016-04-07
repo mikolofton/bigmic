@@ -1,0 +1,25 @@
+<!-- Queue Details -->
+<div class="container queue" ng-show="inProgress">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Current Queue</div>
+        <div class="panel-body">
+          <ol ng-show="speakers.length">
+            <li class="{{speaker.id}}" ng-repeat="speaker in speakers">
+              <strong>{{speaker.name}}</strong>
+              <!-- enabled for admin -->
+              <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  ng-click="vm.doneSpeaking()"
+                  ng-show="role === 'admin'">done</button>
+            </li>
+          </ol>
+          <div ng-hide="speakers.length">No one in queue</div>
+        </div>
+         <div ng-show="speakers.length" class="panel-footer">{{speakers.length}} in queue</div>
+      </div>
+    </div>
+  </div>
+</div>
