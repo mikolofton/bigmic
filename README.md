@@ -95,9 +95,8 @@ Should see: 'HEAD is now at ...'
 ***
 
 ## LinkedIn Accounts
-username: mindy.tchieu@accenture.com
-linked in pw: testing123
 
 username: bigmicmarty@gmail.com
-linked in pw: testing123
-gmail pw: bigmic123
+
+pw: testing123
+
